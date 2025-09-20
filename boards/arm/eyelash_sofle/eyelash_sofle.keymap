@@ -75,7 +75,7 @@
 &trans     &trans  &trans     &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LGUI   &trans  &trans     &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans     &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp CAPS   &trans  &kp LCTRL  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPS   &trans  &kp LCTRL  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans 
             >;
 
             display-name = "MAC";
