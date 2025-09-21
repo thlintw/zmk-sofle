@@ -13,8 +13,9 @@
 
 #define DEFAULT 0
 #define MAC 1
-#define NUM 2
-#define FN 3
+#define NAV 2
+#define NUM 3
+#define FN 4
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -64,7 +65,7 @@
 &kp TAB       &kp Q         &kp W         &kp E      &kp R          &kp T            &kp DOWN_ARROW   &kp Y        &kp U      &kp I      &kp O         &kp P       &kp EQUAL
 &kp LCTRL     &kp A         &kp S         &kp D      &kp F          &kp G            &kp LEFT_ARROW   &kp H        &kp J      &kp K      &kp L         &kp SEMI    &kp SQT
 &kp LSHFT     &kp Z         &kp X         &kp C      &kp V          &kp B            &kp RIGHT_ARROW  &kp N        &kp M      &kp COMMA  &kp DOT       &kp FSLH    &kp RSHIFT
-&kp LS(LALT)  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp BACKSPACE  &lt FN ESC       &kp BSLH         &lt NUM F12  &kp DEL    &kp ENTER  &kp BSLH      &lt FN ESC            
+&kp LS(LALT)  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp BACKSPACE  &lt NAV ESC       &kp BSLH         &lt NUM F12  &kp DEL    &kp ENTER  &kp BSLH      &lt FN ESC            
             >;
 
             sensor-bindings = <&inc_dec_kp LS(LALT) LS(LALT)>;
@@ -82,6 +83,20 @@
 
             display-name = "MAC";
             sensor-bindings = <&inc_dec_kp CAPS CAPS>;
+        };
+
+        
+        nav_layer {
+            bindings = <
+&none   &none   &none   &none   &none   &none          &kp HOME   &none   &kp HOME &kp INS  &kp PG_UP  &none  &none
+&trans  &none   &none   &none   &none   &kp CAPS       &kp END    &none   &kp END  &kp UP   &kp PG_DN  &none   &none
+&trans  &none   &none   &none   &none   &kp PSCRN      &kp PG_UP  &none   &kp LEFT &kp DOWN &kp RIGHT  &none   &none
+&trans  &none   &none   &none   &none   &none          &kp PG_DN  &none   &none    &none    &none      &none  &none
+&trans  &trans  &trans  &trans  &trans  &tog MAC       &trans     &trans  &none    &none    &none      &none   
+         >;
+
+            sensor-bindings = <&scroll_encoder>;
+            display-name = "NAV";
         };
 
         num_layer {
