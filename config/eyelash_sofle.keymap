@@ -67,7 +67,7 @@
 &kp LS(LALT)  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp BACKSPACE  &lt FN ESC       &kp BSLH         &lt NUM F12  &kp DEL    &kp ENTER  &kp BSLH      &lt FN ESC            
             >;
 
-            sensor-bindings = <&inc_dec_kp HOME END>;
+            sensor-bindings = <&inc_dec_kp LS(LALT) LS(LALT)>;
             display-name = "DEF";
         };
 
@@ -81,7 +81,7 @@
             >;
 
             display-name = "MAC";
-            sensor-bindings = <&inc_dec_kp HOME END>;
+            sensor-bindings = <&inc_dec_kp CAPS CAPS>;
         };
 
         num_layer {
