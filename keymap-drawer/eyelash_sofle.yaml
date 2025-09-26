@@ -58,9 +58,9 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: 'Sft+$$mdi:apple-keyboard-option$$', h: NAV}
+  - {t: HOME, h: NAV}
   - {t: \, s: '|'}
-  - {t: F12, h: NUM}
+  - {t: END, h: NUM}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: \, s: '|'}
@@ -257,9 +257,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
   - KP DOT
-  - KP ENTER
   FN:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F1
