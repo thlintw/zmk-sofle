@@ -54,6 +54,20 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        backspace_b_default {
+            bindings = <&kp LS(LALT)>;
+            key-positions = <44 56>;
+            layers = <0>;  // DEFAULT layer only
+            timeout-ms = <50>;
+        };
+
+        backspace_b_mac {
+            bindings = <&kp CAPS>;
+            key-positions = <44 56>;
+            layers = <1>;  // MAC layer only
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
