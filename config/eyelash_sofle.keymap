@@ -65,10 +65,10 @@
 &kp TAB       &kp Q         &kp W         &kp E      &kp R          &kp T            &kp DOWN_ARROW   &kp Y        &kp U      &kp I      &kp O         &kp P       &kp EQUAL
 &kp LCTRL     &kp A         &kp S         &kp D      &kp F          &kp G            &kp LEFT_ARROW   &kp H        &kp J      &kp K      &kp L         &kp SEMI    &kp SQT
 &kp LSHFT     &kp Z         &kp X         &kp C      &kp V          &kp B            &kp RIGHT_ARROW  &kp N        &kp M      &kp COMMA  &kp DOT       &kp FSLH    &kp RSHIFT
-&kp LS(LALT)  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp BACKSPACE  &lt NAV ESC       &kp BSLH         &lt NUM F12  &kp DEL    &kp ENTER  &kp BSLH      &lt FN ESC            
+&kp LS(LALT)  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp BACKSPACE  &lt NAV LS(LALT)       &kp BSLH         &lt NUM F12  &kp DEL    &kp ENTER  &kp BSLH      &lt FN ESC            
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(LALT) LS(LALT)>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
             display-name = "DEF";
         };
 
@@ -78,21 +78,21 @@
 &trans     &trans  &trans     &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LGUI   &trans  &trans     &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans     &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp CAPS   &trans  &kp LCTRL  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans 
+&kp CAPS   &trans  &kp LCTRL  &trans  &trans  &lt NAV CAPS       &trans  &trans  &trans  &trans  &trans  &trans 
             >;
 
             display-name = "MAC";
-            sensor-bindings = <&inc_dec_kp CAPS CAPS>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
         
         nav_layer {
             bindings = <
-&none   &none   &none   &none   &none   &none          &kp HOME   &none   &kp HOME &kp INS  &kp PG_UP  &none  &none
-&trans  &none   &none   &none   &none   &kp CAPS       &kp END    &none   &kp END  &kp UP   &kp PG_DN  &none   &none
-&trans  &none   &none   &none   &none   &kp PSCRN      &kp PG_UP  &none   &kp LEFT &kp DOWN &kp RIGHT  &none   &none
-&trans  &none   &none   &none   &none   &none          &kp PG_DN  &none   &none    &none    &none      &none  &none
-&trans  &trans  &trans  &trans  &trans  &tog MAC       &trans     &trans  &none    &none    &none      &none   
+&none   &none   &none   &none   &none   &kp ESC          &kp HOME   &kp ESC   &kp HOME &kp INS  &kp PG_UP  &none  &none
+&trans  &none   &kp LBRC  &kp RBRC   &none   &kp CAPS       &kp END    &none   &kp END  &kp UP   &kp PG_DN  &none   &none
+&trans  &none   &kp LPAR  &kp RPAR   &none   &kp PSCRN      &kp PG_UP  &none   &kp LEFT &kp DOWN &kp RIGHT  &none   &none
+&trans  &none   &kp LBKT  &kp RBKT   &none   &none          &kp PG_DN  &none   &none    &none    &none      &none  &none
+&trans  &trans  &trans  &trans  &trans  &tog MAC       &trans     &trans  &trans     &none    &none      &none   
          >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -101,11 +101,11 @@
 
         num_layer {
             bindings = <
-&none   &none   &none   &none   &none   &none          &kp HOME   &none   &kp KP_NUM  &kp KP_SLASH  &kp KP_ASTERISK  &kp KP_MINUS  &none
-&trans  &none   &none   &none   &none   &kp CAPS       &kp END    &none   &kp KP_N7   &kp KP_N8     &kp KP_N9        &kp KP_PLUS   &none
-&trans  &none   &none   &none   &none   &kp PSCRN      &kp PG_UP  &none   &kp KP_N4   &kp KP_N5     &kp KP_N6        &kp KP_PLUS   &none
-&trans  &none   &none   &none   &none   &none          &kp PG_DN  &none   &kp KP_N1   &kp KP_N2     &kp KP_N3        &kp KP_ENTER  &none
-&trans  &trans  &trans  &trans  &trans  &tog MAC       &trans     &trans  &none       &kp KP_N0     &kp KP_DOT       &kp KP_ENTER   
+&none   &none   &none   &none   &none   &kp ESC          &kp PG_UP  &kp ESC   &kp KP_NUM  &kp KP_SLASH  &kp KP_ASTERISK  &kp KP_MINUS  &none
+&trans  &none   &kp LBRC  &kp RBRC   &none   &kp CAPS       &kp PG_DN  &none   &kp KP_N7   &kp KP_N8     &kp KP_N9        &kp KP_PLUS   &none
+&trans  &none   &kp LPAR  &kp RPAR   &none   &kp PSCRN      &kp HOME   &none   &kp KP_N4   &kp KP_N5     &kp KP_N6        &kp KP_PLUS   &none
+&trans  &none   &kp LBKT  &kp RBKT   &none   &none          &kp END    &none   &kp KP_N1   &kp KP_N2     &kp KP_N3        &kp KP_ENTER  &none
+&trans  &trans  &trans  &trans  &trans  &tog MAC       &trans     &trans  &trans      &kp KP_N0     &kp KP_DOT       &kp KP_ENTER   
          >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -118,7 +118,7 @@
 &trans  &none   &kp LBRC  &kp RBRC  &none   &none        &none       &none   &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &none    &kp F12
 &trans  &none   &kp LPAR  &kp RPAR  &none   &none        &kp C_PREV  &none   &none       &none       &none       &none    &none
 &trans  &none   &kp LBKT  &kp RBKT  &none   &none        &kp C_NEXT  &none   &none       &none       &none       &none    &none
-&trans  &trans  &trans    &trans    &trans  &trans       &kp C_PP    &trans  &trans      &trans      &trans      &trans            
+&trans  &trans  &trans    &trans    &trans  &trans       &kp C_PP    &trans  &trans      &trans      &none      &trans            
             >;
 
             sensor-bindings = <&scroll_encoder>;
