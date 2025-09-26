@@ -63,8 +63,8 @@ layers:
   - {t: END, h: NUM}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: \, s: '|'}
-  - {t: '$$mdi:keyboard-esc$$', h: FN}
+  - {t: '[', s: '{'}
+  - {t: ']', h: FN, s: '}'}
   MAC:
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -151,7 +151,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-caps$$
   - END
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: \, s: '|'}
   - END
   - $$mdi:arrow-up-bold$$
   - PG DN
@@ -192,7 +192,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUM:
