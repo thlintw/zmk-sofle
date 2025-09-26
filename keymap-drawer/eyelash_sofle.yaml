@@ -58,7 +58,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-esc$$', h: NAV}
+  - {t: 'Sft+$$mdi:apple-keyboard-option$$', h: NAV}
   - {t: \, s: '|'}
   - {t: F12, h: NUM}
   - $$mdi:backspace-reverse-outline$$
@@ -123,7 +123,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: NAV}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -136,9 +136,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-esc$$
   - HOME
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-esc$$
   - HOME
   - INS
   - PG UP
@@ -146,8 +146,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '{'
+  - '}'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-caps$$
   - END
@@ -159,8 +159,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - (
+  - )
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:printer-outline$$
   - PG UP
@@ -172,8 +172,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PG DN
@@ -191,7 +191,7 @@ layers:
   - {t: MAC, h: toggle, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -201,9 +201,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - HOME
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-esc$$
+  - PG UP
+  - $$mdi:keyboard-esc$$
   - KP NUM
   - KP SLASH
   - KP ASTERISK
@@ -211,11 +211,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '{'
+  - '}'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-caps$$
-  - END
+  - PG DN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP 7
   - KP 8
@@ -224,11 +224,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - (
+  - )
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:printer-outline$$
-  - PG UP
+  - HOME
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP 4
   - KP 5
@@ -237,11 +237,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PG DN
+  - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP 1
   - KP 2
@@ -256,7 +256,7 @@ layers:
   - {t: MAC, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
   - KP DOT
   - KP ENTER
@@ -323,8 +323,14 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {type: held}
 combos:
 - p: [14, 28, 40]
   k: '&soft_off'
+- p: [44, 56]
+  k: Sft+$$mdi:apple-keyboard-option$$
+  l: [DEF]
+- p: [44, 56]
+  k: $$mdi:apple-keyboard-caps$$
+  l: [MAC]
